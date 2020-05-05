@@ -3,6 +3,7 @@ from tkinter import messagebox as MessageBox
 
 root = Tk()
 root.resizable(0,0)
+
 # Funciones
 
 def validar():
@@ -11,11 +12,11 @@ def validar():
 	e = 0
 	s = 0
 	for i in cadena:
-		if i in ["1","2","3","4","5","6","7","8","9","0"]:
+		if i.isnumeric():
 			c += 1
 		elif i == " ":
 			e += 1
-		elif i in ["!","|","@","~","€","¬","·","$","%","&","(",")","=","?","¿","º","ª","^","<",">"]:
+		elif not i.isalpha():
 			s += 1
 	if cadena == "":
 		MessageBox.showerror("Error","El campo de texto está vacio, ingresa un texto")
@@ -53,7 +54,7 @@ frame_principal = Frame(root,bg="#1E2425",width=400,height=100).pack()
 
 # Label piso
 
-label2 = Label(root,justify="left",text="UCASAL - Ing. Informática", bg="#263844",font=("Sitka",10),fg="white").pack(anchor="sw",side="bottom",fill="both",expand=1)
+label2 = Label(root,justify="left",text="Prueba de caja negra - Facundo Kimbo", bg="#263844",font=("Sitka",10),fg="white").pack(anchor="sw",side="bottom",fill="both",expand=1)
 
 # Ejecución
 
