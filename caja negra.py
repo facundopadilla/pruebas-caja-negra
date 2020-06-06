@@ -1,3 +1,6 @@
+# @author: facundopadilla
+# @linkedin: https://www.linkedin.com/in/facundopadilla/
+
 from tkinter import *
 from tkinter import messagebox as MessageBox
 
