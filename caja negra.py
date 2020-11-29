@@ -57,7 +57,7 @@ frame_principal = Frame(root,bg="#1E2425",width=400,height=100).pack()
 
 # Label piso
 
-label2 = Label(root,justify="left",text="Prueba de caja negra - Facundo Kimbo", bg="#263844",font=("Sitka",10),fg="white").pack(anchor="sw",side="bottom",fill="both",expand=1)
+label2 = Label(root,justify="left",text="Prueba de caja negra - Facundo Padilla", bg="#263844",font=("Sitka",10),fg="white").pack(anchor="sw",side="bottom",fill="both",expand=1)
 
 # Ejecución
 
